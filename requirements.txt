@@ -1,4 +1,6 @@
-opencv-python
+ultralytics
 easyocr
-numpy
+opencv-python
+matplotlib
 tqdm
+fast_plate_ocr
