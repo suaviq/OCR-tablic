@@ -37,6 +37,7 @@ def detect_and_read_plate(frame):
     return text, (x1, y1, x2, y2)
 
 def live_video_ocr(type = 'video', video_path = None):
+    out = 0
     if type == "video":
         if not video_path:
             print("Podaj ścieżkę do pliku wideo.")
@@ -46,7 +47,7 @@ def live_video_ocr(type = 'video', video_path = None):
         fps = cap.get(cv2.CAP_PROP_FPS)
         width  = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
         height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-        out = cv2.VideoWriter("videos/output_annotated_video.mp4", fourcc, fps, (width, height))
+        out = cv2.VideoWriter("../videos/output_annotated_video.mp4", fourcc, fps, (width, height))
     else:
         cap = cv2.VideoCapture(0)
 

@@ -6,7 +6,7 @@ __pycache__/
 # dataset
 dataset/
 yolo_data/
-videos/
+# videos/
 videos.zip
 # C extensions
 *.so
